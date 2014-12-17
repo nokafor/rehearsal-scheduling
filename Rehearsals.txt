@@ -1,0 +1,7 @@
+Sunday, 1300, 1500, space1, 1800, 2000, space2, 2200, 2400, space3
+Monday, 1700, 1900, space1, 2030, 2230, space2
+Tuesday, 1630, 1900, space1, 2300, 100, space2
+Wednesday, 1630, 1900, space1, 1830, 2030, space2, 2300, 100, space3
+Thursday, 1500, 1700, space1, 2100, 2300, space2
+Friday, 1700, 1900, space1, 2100, 2300, space2
+Saturday, 1200, 1400, space1, 1900, 2100, space2, 2200, 2400, space3, 2300, 100, space3

@@ -1,0 +1,5 @@
+Monday, 1230, 1630, conflict
+Tuesday, 1230, 1630, conflict
+Wednesday, 1700, 1830, conflict
+Friday, 1630, 1800, conflict
+Sunday, 1300, 1400, conflict, 2100, 2400, conflict
