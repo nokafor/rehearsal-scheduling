@@ -2,8 +2,9 @@ import java.util.*;
 
 public class Schedule
 {
+    // schedule holds the name of the day of the week, and that day's events
     private TreeMap<String, Day> schedule;
-    private String name;
+    private String name; // label for the schedule
 
     public Schedule(String name)
     {
@@ -27,6 +28,11 @@ public class Schedule
         return name.equals(that.name);
     }
 
+    public void addDay(String day, Day events) {
+        schedule.put(day, events);
+    }
+
+    // add an event to a specific day
     public void add(String day, Event ev)
     {
         Day current;
@@ -41,6 +47,7 @@ public class Schedule
         schedule.put(day, current);
     }
 
+    // add a rehearsal to a specific day
     public void addRehearsal(String day, Event ev) {
         Day current;
 
@@ -54,10 +61,64 @@ public class Schedule
         schedule.put(day, current);   
     }
 
-    public void addDay(String day, Day events) {
-        schedule.put(day, events);
+    // function used mostly in casting
+    // add the days/events of this schedule to that schedule
+    public void addTo(Schedule that) {
+        for (Map.Entry<String, Day> entry : schedule.entrySet()) {
+
+            String name = entry.getKey();
+            Day current = entry.getValue();
+            Queue<Event> allEvents = current.allEvents();
+
+            for (Event ev : allEvents)
+                that.add(name, ev);
+        }
+    }
+
+    // function used mostly in casting, where it would be called by the
+    // rehearsal schedule to compare with a cast's schedule
+    // compares the two schedules and returns a schedule of the free times
+    public Schedule freeTimes(Schedule that) {
+    	Collection<Day> mySchedule = schedule.values();
+    	Collection<Day> otherSchedule = that.getDays();
+
+    	Schedule noConflicts = new Schedule("Free Times");
+
+        // for every day in the schedule
+    	for (Day myD : mySchedule)  {
+            // make a copy of it
+    		Day currentDay = new Day(myD.name());
+    		Queue<Event> current = myD.allEvents();
+
+    		currentDay.addEvents(current);
+
+            // find it's matching day in the other schedule
+    		for (Day otherD : otherSchedule) {
+    			if (myD.equals(otherD)) {
+    				Queue<Event> other = otherD.allEvents();
+
+                    // find any conflicting events, and remove them from the
+                    // copy of the current day
+    				for (Event ev : other) {
+    					for (Event e : current) {
+    						if (ev.conflict(e)) {
+    							if (currentDay.contains(e))
+    								currentDay.remove(e);
+    						}
+
+    					}
+    				}
+    			}
+    		}
+
+            // add day with non-conflicting events into calendar
+    		noConflicts.addDay(currentDay.name(), currentDay);
+    	}
+
+        return noConflicts;
     }
     
+    // format and print the schedule
     public void show()
     {
         System.out.println(name);
@@ -71,57 +132,10 @@ public class Schedule
         System.out.println();
     }
 
-    public void addTo(Schedule that) {
-        for (Map.Entry<String, Day> entry : schedule.entrySet()) {
-
-            String name = entry.getKey();
-            Day current = entry.getValue();
-            Queue<Event> allEvents = current.allEvents();
-
-            for (Event ev : allEvents)
-                that.add(name, ev);
-        }
-    }
-
-    // that = casting schedule
-    public Schedule freeTimes(Schedule that) {
-    	Collection<Day> mySchedule = schedule.values();
-    	Collection<Day> otherSchedule = that.getDays();
-
-    	Schedule noConflicts = new Schedule("Free Times");
-
-    	for (Day myD : mySchedule)  {
-    		Day currentDay = new Day(myD.name());
-    		Queue<Event> current = myD.allEvents();
-
-    		currentDay.addEvents(current);
-
-    		for (Day otherD : otherSchedule) {
-    			if (myD.equals(otherD)) {
-    				Queue<Event> other = otherD.allEvents();
-
-    				for (Event ev : other) {
-    					for (Event e : current) {
-    						if (ev.conflict(e)) {
-    							//remove e from currentday if still in current day
-    							if (currentDay.contains(e))
-    								currentDay.remove(e);
-    						}
-
-    					}
-    				}
-    			}
-    		}
-
-    		noConflicts.addDay(currentDay.name(), currentDay);
-    	}
-
-        return noConflicts;
-    }
-    
+    // test method
     public static void main(String[] args) { 
 
-// set up some events  
+        // set up some events  
         Event ev1 = new Event(330, 500, "conflict1"); 
         Event ev2 = new Event(815, 1000, "conflict2"); 
         Event ev3 = new Event(1000, 200, "conflict3"); 
@@ -131,7 +145,7 @@ public class Schedule
         Event ev7 = new Event(800, 1000, "conflict7");  
 
 
-// set up some dates 
+        // set up some dates 
         String d1 = "Monday";
         String d2 = "Wednesday";
         String d3 = "Thursday";
@@ -149,10 +163,9 @@ public class Schedule
         s.add(d4, ev3);
 
         
-// Output the events for each date 
+        // Output the events for each date 
         s.show(); 
 
         System.out.println(s.equals(new Schedule("Test")));
-    }
-    
+    }    
 }

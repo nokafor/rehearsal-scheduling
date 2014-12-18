@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Casting {
-	// have all files in conflicts folder be command line argument
+	// Command line arguments = dancer conflicts
 	public static void main(String[] args) {
 
 		// get rehearsal schedule
@@ -103,7 +103,7 @@ public class Casting {
 		// 	cast.show();
 		// }
 
-		//compare cast schedule to rehearsal schedule
+		// get and print the available rehearsal times for each cast
 		TreeMap<String, Schedule> castAvailabilities = new TreeMap<String, Schedule>();
 
 		for (Schedule cast : casts) {
@@ -113,7 +113,7 @@ public class Casting {
 			rehearsalTimes.show();
 		}
 
-		//check how many casts are free on which days
+		//check how many casts are free on each day
 		String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 		int length = daysOfWeek.length;
 		int[] available = new int[length];
@@ -121,6 +121,7 @@ public class Casting {
 		for (Map.Entry<String, Schedule> entry : castAvailabilities.entrySet()) {
 			Schedule current = entry.getValue();
 			for (int i = 0; i < length; i++) {
+				// for every day of the week, if cast is free, add to count
 				Day currentDay = current.get(daysOfWeek[i]);
 
 				if (!currentDay.isEmpty())
