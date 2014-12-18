@@ -1,0 +1,2 @@
+Monday, 1900, 2000, conflict, 2300, 100, conflict
+Friday, 1630, 1830, conflict

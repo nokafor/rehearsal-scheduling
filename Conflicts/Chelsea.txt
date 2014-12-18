@@ -1,0 +1,2 @@
+Monday, 1900, 2100, conflict
+Wednesday, 1900, 2100, conflict
