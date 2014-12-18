@@ -7,7 +7,7 @@ public class Casting {
 
 		// get rehearsal schedule
 		Schedule rehearsalSchedule = new Schedule("Rehearsal Times");
-
+		TreeMap<String, List<String>> rehearsalBreakdown = new TreeMap<String, List<String>>();
 		String rehearsalFileName = "Rehearsals.txt";
 		Scanner reader;
 		try {
@@ -20,15 +20,22 @@ public class Casting {
 				for (int i = 1; i < length-2; i=i+3) {
 					Event ev = new Event(Integer.parseInt(currentDay[i]), Integer.parseInt(currentDay[i+1]), currentDay[i+2]);
 					rehearsalSchedule.addRehearsal(currentDay[0], ev);
+
+					rehearsalBreakdown.put(new String(currentDay[0] + ", " + ev.toString()), new ArrayList<String>());
 				}
 			}
 		}
 
 		catch(Exception e) {
 			System.out.println("Error opening/reading rehearsal schedule. Please try again.");
+			//e.printStackTrace();
+			return;
 		}
 
 		//rehearsalSchedule.show();
+		// for (Map.Entry<String, List<String>> entry : rehearsalBreakdown.entrySet()) {
+		// 	System.out.println(entry.getKey());
+		// }
 
 
 		//get conflicts for each person
@@ -113,27 +120,55 @@ public class Casting {
 			rehearsalTimes.show();
 		}
 
-		//check how many casts are free on each day
+		// check how many casts are free on each day/rehearsal
 		String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 		int length = daysOfWeek.length;
-		int[] available = new int[length];
 
+		// go through each casts schedule
 		for (Map.Entry<String, Schedule> entry : castAvailabilities.entrySet()) {
-			Schedule current = entry.getValue();
+			Schedule current = entry.getValue(); // current cast's schedule
+			
+			// check the data for each day of the week
 			for (int i = 0; i < length; i++) {
-				// for every day of the week, if cast is free, add to count
+				
+				// get the current day (and all its events)
+				// for both the cast and rehearsal
 				Day currentDay = current.get(daysOfWeek[i]);
+				Queue<Event> currentEvents = currentDay.allEvents();
+				Day rehearsalDay = rehearsalSchedule.get(daysOfWeek[i]);
+				Queue<Event> rehearsals = rehearsalDay.allEvents();
 
-				if (!currentDay.isEmpty())
-					available[i]++;
+				// note for which rehearsals the cast is free
+				for (Event ev : rehearsals) {
+					for (Event e : currentEvents) {
+						// check if events are the same
+						if (ev.getStart() == e.getStart() && ev.getEnd() == e.getEnd()) {
+							List<String> availableCasts = rehearsalBreakdown.get(daysOfWeek[i] + ", " + ev.toString());
+							availableCasts.add(entry.getKey());
+						}
+					}
+				}
 			}
 		}
 
-		for(int i = 0; i < length; i++) {
-			System.out.println("# of Casts Available on " + daysOfWeek[i] + ": " + available[i]);
+		// for(int i = 0; i < length; i++) {
+		// 	System.out.println("# of Casts Available on " + daysOfWeek[i] + ": " + available[i]);
+		// }
+
+		for (Map.Entry<String, List<String>> entry : rehearsalBreakdown.entrySet()) {
+			String rehearsal = entry.getKey();
+			List<String> availCasts = entry.getValue();
+
+			System.out.println(rehearsal);
+			System.out.println("=========");
+
+			for (String s : availCasts) {
+				System.out.print(s + ", ");
+			}
+			System.out.println();
+			System.out.println();
 		}
 
 		// save all free times to text file?
-		//can we check how many are free per rehearsal?
 	}
 }
