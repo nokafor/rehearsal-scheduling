@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 public class Day
 {
@@ -84,6 +85,19 @@ public class Day
         }
 
         System.out.println();
+    }
+
+    public String toString() {
+        String output = name + ":\n\n";
+
+        for (Event ev : conflicts) {
+                output += ev.toString();
+                output += "\n";
+        }
+
+        output += "\n";
+
+        return output;
     }
 
     // test method

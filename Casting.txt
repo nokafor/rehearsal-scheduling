@@ -3,8 +3,9 @@ Cap/Kovey, Capella, Dom, Ebo, Teri, Xuewei
 Don, Don, Ebo, Ijeoma, John, Jonece, Reva, Vira
 Chelsea/Aisha, Aisha, Chelsea, Daphnee, Hulai, Jonece, Reva, Tolu
 Lorenzo, Daphnee, Ijeoma, Lorenzo, Natasha, Teri
-Ijeoma/Terry, Chelsea, Clarissa, Daphnee, Ijeoma, Jessica, Natahsa, Xuewei
+Ijeoma/Terry, Chelsea, Clarissa, Daphnee, Ijeoma, Jessica, Natasha, Xuewei
 Daphnee/Tolu, Aisha, Capella, Daphnee, Hulai, Jonece, Sylvia, Teju, Tolu, Vira
 Dom, Ari, Chris, Dom, Ebo, John, Lorenzo, Natasha
 Sylvia/Ebo, Ari, Cam, Ebo, Hulai, Jess, John, Jonece, Sylvia, Teri, Tolu, Xuewei
 John, Cam, Chelsea, Chris, Clarissa, Dom, John, Lorenzo
+ChoreoVid, Cam, Daphnee, Don, Ebo, Jonece, Lorenzo, Natasha, Teju, Teri, Vira

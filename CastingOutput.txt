@@ -1,0 +1,444 @@
+Available Rehearsals for Each Cast
+
+Jess's Available Rehearsal Times
+================================
+Friday:
+
+
+Monday:
+
+2030-2230: space2
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+2300-100: space3
+
+
+Cap/Kovey's Available Rehearsal Times
+================================
+Friday:
+
+2100-2300: space2
+
+Monday:
+
+2030-2230: space2
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1800-2000: space2
+
+Thursday:
+
+2100-2300: space2
+
+Tuesday:
+
+1630-1900: space1
+2300-100: space2
+
+Wednesday:
+
+1630-1900: space1
+2300-100: space3
+
+
+Don's Available Rehearsal Times
+================================
+Friday:
+
+
+Monday:
+
+1700-1900: space1
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+2300-100: space3
+
+
+Chelsea/Aisha's Available Rehearsal Times
+================================
+Friday:
+
+1700-1900: space1
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+1630-1900: space1
+2300-100: space3
+
+
+Lorenzo's Available Rehearsal Times
+================================
+Friday:
+
+1700-1900: space1
+2100-2300: space2
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+1630-1900: space1
+2300-100: space3
+
+
+Ijeoma/Terry's Available Rehearsal Times
+================================
+Friday:
+
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+2300-100: space3
+
+
+Daphnee/Tolu's Available Rehearsal Times
+================================
+Friday:
+
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+2200-2400: space3
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+2300-100: space3
+
+
+Dom's Available Rehearsal Times
+================================
+Friday:
+
+2100-2300: space2
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+2200-2400: space3
+
+Thursday:
+
+2100-2300: space2
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+1630-1900: space1
+2300-100: space3
+
+
+Sylvia/Ebo's Available Rehearsal Times
+================================
+Friday:
+
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1800-2000: space2
+
+Thursday:
+
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+1630-1900: space1
+2300-100: space3
+
+
+John's Available Rehearsal Times
+================================
+Friday:
+
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+
+Thursday:
+
+2100-2300: space2
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+2300-100: space3
+
+
+ChoreoVid's Available Rehearsal Times
+================================
+Friday:
+
+2100-2300: space2
+
+Monday:
+
+
+Saturday:
+
+1200-1400: space1
+1900-2100: space2
+2200-2400: space3
+2300-100: space3
+
+Sunday:
+
+1300-1500: space1
+1800-2000: space2
+
+Thursday:
+
+2100-2300: space2
+
+Tuesday:
+
+2300-100: space2
+
+Wednesday:
+
+2300-100: space3
+
+
+
+Available Casts for Each Rehearsal
+
+Thursday, 1500-1700: space1
+======================
+
+
+Wednesday, 1830-2030: space2
+======================
+
+
+Monday, 1700-1900: space1
+======================
+Don, 
+
+Tuesday, 1630-1900: space1
+======================
+Cap/Kovey, 
+
+Friday, 1700-1900: space1
+======================
+Chelsea/Aisha, Lorenzo, 
+
+Monday, 2030-2230: space2
+======================
+Cap/Kovey, Jess, 
+
+Sunday, 2200-2400: space3
+======================
+Daphnee/Tolu, Dom, 
+
+Friday, 2100-2300: space2
+======================
+Cap/Kovey, ChoreoVid, Dom, Lorenzo, 
+
+Thursday, 2100-2300: space2
+======================
+Cap/Kovey, ChoreoVid, Dom, John, 
+
+Wednesday, 1630-1900: space1
+======================
+Cap/Kovey, Chelsea/Aisha, Dom, Lorenzo, Sylvia/Ebo, 
+
+Sunday, 1300-1500: space1
+======================
+Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Jess, Lorenzo, 
+
+Sunday, 1800-2000: space2
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Jess, Lorenzo, Sylvia/Ebo, 
+
+Saturday, 1200-1400: space1
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Ijeoma/Terry, Jess, John, Lorenzo, Sylvia/Ebo, 
+
+Saturday, 1900-2100: space2
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Ijeoma/Terry, Jess, John, Lorenzo, Sylvia/Ebo, 
+
+Saturday, 2200-2400: space3
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Ijeoma/Terry, Jess, John, Lorenzo, Sylvia/Ebo, 
+
+Saturday, 2300-100: space3
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Ijeoma/Terry, Jess, John, Lorenzo, Sylvia/Ebo, 
+
+Tuesday, 2300-100: space2
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Ijeoma/Terry, Jess, John, Lorenzo, Sylvia/Ebo, 
+
+Wednesday, 2300-100: space3
+======================
+Cap/Kovey, Chelsea/Aisha, ChoreoVid, Daphnee/Tolu, Dom, Don, Ijeoma/Terry, Jess, John, Lorenzo, Sylvia/Ebo, 
+

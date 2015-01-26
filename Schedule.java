@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 public class Schedule
 {
@@ -78,11 +79,11 @@ public class Schedule
     // function used mostly in casting, where it would be called by the
     // rehearsal schedule to compare with a cast's schedule
     // compares the two schedules and returns a schedule of the free times
-    public Schedule freeTimes(Schedule that) {
+    public Schedule freeTimes(String castName, Schedule that) {
     	Collection<Day> mySchedule = schedule.values();
     	Collection<Day> otherSchedule = that.getDays();
 
-    	Schedule noConflicts = new Schedule("Free Times");
+    	Schedule noConflicts = new Schedule(castName + "'s Available Rehearsal Times");
 
         // for every day in the schedule
     	for (Day myD : mySchedule)  {
@@ -130,6 +131,19 @@ public class Schedule
         }
         
         System.out.println();
+    }
+
+    public String toString() {
+        String output = this.name + "\n================================\n";
+
+        for (Map.Entry<String, Day> entry : schedule.entrySet()) {
+            Day current = entry.getValue();
+            output += current.toString();
+        }
+
+        output += "\n";
+
+        return output;
     }
 
     // test method
